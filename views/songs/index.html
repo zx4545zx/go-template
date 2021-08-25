@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Songs</title>
+</head>
+<body>
+  <h1>All songs</h1>
+  <ul>
+    {{ range . }}
+    <li><a href="/songs/{{ .Id }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</body>
+</html>
